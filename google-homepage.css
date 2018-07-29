@@ -53,6 +53,7 @@ header {
 header nav a {
 	padding: 0 7.5px 0;
 	opacity: 0.75;
+	line-height: 36px;
 }
 
 header nav a.sym {
@@ -98,7 +99,7 @@ header nav a.sym {
 
 main {
 	margin-bottom: -84px;
-	padding: 198px 0 0 0;
+	padding: 198px 0 84px 0;
 	border-bottom: 1px solid #e4e4e4;
 	min-height: 100vh;
 	text-align: center;
@@ -183,4 +184,19 @@ footer section nav a {
 
 footer section:first-of-type nav a {
 	font-size: 15px;
+}
+
+@media screen and (max-width: 740px) {
+	main {
+		padding: 136px 0 84px 0;
+	}
+	main form input[type="text"] {
+		width: 85%;
+	}
+	nav a {
+		padding: 0 6px !important;
+	}
+	nav a.sym {
+		margin: 0 6px !important;
+	}
 }
